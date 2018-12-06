@@ -1,4 +1,4 @@
-const http = require("http");
+const server = require("http").Server;
 const { nowMicroApi } = require("../../index");
 const nomaConfig = require("./noma.config");
 
@@ -11,7 +11,6 @@ const handler = noma(async (req, res) => {
 
 // Test server
 const PORT = 8080;
-const server = http.createServer(handler);
-server.listen(PORT, () => {
+server(handler).listen(PORT, () => {
   console.log(`noma example running on PORT ${PORT}`);
 });
