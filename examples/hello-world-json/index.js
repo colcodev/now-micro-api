@@ -1,14 +1,17 @@
-const { nowMicroApi } = require("now-micro-api");
+const http = require("http");
+const { nowMicroApi } = require("../../index");
+const nomaConfig = require("./noma.config");
 
-const noma = nowMicroApi({
-  cors: {
-    enabled: false
-  }
+const noma = nowMicroApi(nomaConfig);
+
+const handler = noma(async (req, res) => {
+  console.log("QUERY", req.url, req.query);
+  res.end("OK");
 });
 
-const handler = async (req, res) => {
-  console.log("QUERY", req.query);
-  res.end("OK");
-};
-
-module.exports = noma(handler);
+// Test server
+const PORT = 8080;
+const server = http.createServer(handler);
+server.listen(PORT, () => {
+  console.log(`noma example running on PORT ${PORT}`);
+});
