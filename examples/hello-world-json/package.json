@@ -1,0 +1,8 @@
+{
+  "name": "noma-hello-world-json",
+  "version": "1.0.0",
+  "description": "JSON response for NowMicroApi",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false
+}

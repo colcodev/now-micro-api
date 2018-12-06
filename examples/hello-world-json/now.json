@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "noma-hello-world-json",
+  "builds": [
+    {
+      "src": "./**/*.js",
+      "use": "@now/node"
+    }
+  ],
+  "public": true
+}
