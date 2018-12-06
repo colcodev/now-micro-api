@@ -1,5 +1,5 @@
-const queryParser = require("./middlewares/queryParser");
-const nowMicroApi = require("./middlewares/nowMicroApi");
+const queryParser = require("./lib/helpers/queryParser");
+const nowMicroApi = require("./lib/middlewares/nowMicroApi");
 
 module.exports = {
   nowMicroApi,
