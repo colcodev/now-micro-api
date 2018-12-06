@@ -1,4 +1,4 @@
-const { nowMicroApi } = require("../../index");
+const { nowMicroApi } = require("now-micro-api");
 
 const noma = nowMicroApi({
   cors: {

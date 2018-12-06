@@ -4,5 +4,8 @@
   "description": "JSON response for NowMicroApi",
   "main": "index.js",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "now-micro-api": "^0.0.1"
+  }
 }
