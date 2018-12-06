@@ -1,0 +1,33 @@
+{
+  "name": "now-micro-api",
+  "version": "0.0.1",
+  "description": "Micro awesome utils to make your Now API great again.",
+  "main": "index.js",
+  "engines": {
+    "node": "8.x.x"
+  },
+  "repository": "git@github.com:colcodev/now-micro-api.git",
+  "author": "Mario Colque <colquemario@gmai.com>",
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0"
+  },
+  "license": "MIT",
+  "private": false
+}
