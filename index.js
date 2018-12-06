@@ -1,7 +1,7 @@
-const queryParser = require("./lib/helpers/queryParser");
+const compose = require("./lib/helpers/compose");
 const nowMicroApi = require("./lib/middlewares/nowMicroApi");
 
 module.exports = {
-  nowMicroApi,
-  queryParser
+  compose,
+  nowMicroApi
 };
