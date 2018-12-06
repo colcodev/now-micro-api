@@ -1,5 +1,12 @@
-const nowMicroApi = (options = {}) => handler => (req, res, ...restArgs) => {
-  return handler(req, res, ...restArgs);
+const defaultOptions = {};
+
+const nowMicroApi = (options = defaultOptions) => handler => (
+  req,
+  res,
+  ...restArgs
+) => {
+  console.log("OPTIONS", options);
+  handler(req, res, ...restArgs);
 };
 
 module.exports = nowMicroApi;

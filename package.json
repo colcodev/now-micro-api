@@ -17,6 +17,9 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
+  "dependencies": {
+    "qs": "^6.6.0"
+  },
   "devDependencies": {
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
